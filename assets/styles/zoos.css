@@ -1,0 +1,377 @@
+
+.zoos__container {
+    padding-top: 85px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 100px;
+}
+.zoos__content {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.zoos__card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px 30px;
+}
+.zoos__item {
+    width: 366px;
+    height: 426px;
+    /* border: 1px solid #FA6F32; */
+    background: #FFFFFF;
+    border-radius: 5px;
+    /* cursor: pointer; */
+    position: relative;
+    border: 1px solid transparent;
+    background-clip: padding-box;
+}
+.zoos__item:after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+    border: 1px solid transparent;
+    background: linear-gradient( #FA6F32 100%, #FE9013 100%);
+    border-radius: 5px;
+}
+
+.zoos__item-images {
+    width: 366px;
+    height: 366px;
+    cursor: pointer;
+}
+.contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 12px;
+}
+.contents__item-title {
+    padding-top: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-transform: uppercase;
+    text-align: left;
+    color: #000000;
+}
+.contents__item-text {
+    font-weight: 300;
+    font-size: 15px;
+    color: #000000;
+}
+.alligators {
+    display: none;
+}
+.contents__item-text--alligators1 {
+    text-align: left;
+}
+.contents__item-text--alligators2 {
+    display: none;
+}
+.plants {
+    width: 33px;
+    height: 37px;
+}
+.meat {
+    width: 48px;
+    height: 38px;
+}
+.zoos__arrow {
+    position: absolute;
+    display: block;
+    width: 62px;
+    height: 62px;
+    background:  linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%); 
+    border-radius: 50%;
+    border: none;
+    /* background-image: url('../../assets/images/desktop_donate/section3/arrow_elips_2gg.svg'); */
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 5;
+    transition: background .36s ease-in-out;
+}
+.zoos__arrow:hover {
+    background:  linear-gradient(#E47209 100%, #E47209 100%); 
+    transition: background .36s linear;
+}
+.zoos__arrow:active {
+    background:  linear-gradient(#4B9200 100%, #4B9200 100%); 
+    transition: background .5s ease-in-out;
+}
+.zoos__arrow-prev {
+    left: -82px;
+}
+.zoos__arrow-next {
+    right: -82px;
+    transform: rotate(180deg);
+}
+.button__zoos {
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.images {
+    position: relative;
+}
+.gorillas__congo {
+    display: none;
+}
+
+.images__left {
+    position: absolute;
+    top: -460px;
+    left: 0;
+    bottom: 0;
+    width: 292px;
+    height: 460px;
+    background-image: url('../images/desktop_donate/section3/palm_foto.png');
+}
+.images__right {
+    position: absolute;
+    top: -275px;
+    right: 0;
+    width: 368px;
+    height: 275px;
+    background-image: url('../images/desktop_donate/section3/strelitziapp1.png');
+}
+
+
+@media(max-width: 1440px){
+    .zoos__item {
+        width: 45%;
+    }
+    .zoos__arrow-next {
+        right: -25px;
+    }
+    .zoos__arrow-prev {
+        left: -25px;
+    }
+}
+
+@media(max-width: 1220px){
+    .zoos__item {
+        width: 50%;
+    }
+    .zoos__arrow-next {
+        right: 25px;
+    }
+    .zoos__arrow-prev {
+        left: 25px;
+    }
+}
+
+@media(max-width: 1000px){
+    .zoos__card {
+        gap: 92px 29px;
+    }
+    .zoos__item {
+        width: 294px;
+        height: 354px;
+    }
+    .zoos__item-images {
+        height: 294px;
+    }
+    .zoos__arrow-next {
+        right: 321px;
+        /* display: none; */
+    }
+    .zoos__arrow-prev {
+        left: 324px;
+        /* display: none; */
+    }
+    .gorillas__congo {
+        display: none;
+    }
+    .gorillas__big {
+        order: 3;
+    }
+    .sloth {
+        display: none;
+    }
+    .alligators {
+        display: block;
+        order: 4;
+    }
+    .cheetahs {
+        order: 2;
+    }
+    .giant__pandas {
+        order: 0;
+    }
+    .eagles {
+        order: 1;
+    }
+    .penguins {
+        order: 5;
+    }
+    .contents__item-text--alligators1 {
+        text-align: left;
+        display: none;
+    }
+    .contents__item-text--alligators2 {
+        display: block;
+    }
+    .button__zoos {
+        margin-bottom: 41px;
+    }
+
+    .images__left {
+        position: absolute;
+        top: -202px;
+        left: 0;
+        bottom: 0;
+        width: 292px;
+        height: 460px;
+        background-image: url('../images/desktop_donate/section3/palm_foto1000.png');
+        background-repeat: no-repeat;
+    }
+    .images__right {
+        position: absolute;
+        top: -180px;
+        right: 0;
+        width: 241px;
+        height: 180px;
+        background-image: url('../images/desktop_donate/section3/strelitzia1000.png');
+    }
+}
+
+@media(max-width: 640px){
+    .zoos__container {
+        padding-top: 23px;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 59px;
+    }
+
+    .contents__item-title {
+        font-size: 12.4695px;
+        margin-left: -5px;
+    }
+
+    .contents__item-text {
+        font-size: 11.6901px;
+        margin-left: -5px;
+    }
+    .zoos__item {
+        width: 285px;
+        height: 332px;
+    }
+    .zoos__item-images {
+        height: 285px;
+        /* padding-bottom: 10px; */
+    }
+    .zoos__arrow-next {
+        right: 223px;
+        top: 343px;
+        /* display: none; */
+    }
+    .zoos__arrow-prev {
+        left: 223px;
+        top: 343px;
+        /* display: none; */
+    }
+    .gorillas__congo {
+        display: none;
+    }
+    .gorillas__big {
+        order: 3;
+    }
+    .sloth {
+        display: none;
+    }
+    .alligators {
+        display: block;
+        order: 4;
+    }
+    .cheetahs {
+        display: none;
+    }
+    .giant__pandas {
+        order: 0;
+    }
+    .eagles {
+        order: 1;
+    }
+    .penguins {
+        display: none;
+    }
+    .button__zoos {
+        margin-bottom: 41px;
+    }
+    .meat {
+        width: 29px;
+        height: 29px;
+    }
+    .plants {
+        width: 29px;
+        height: 29px;
+    }
+    .button__zoos {
+        margin-top: 60px;
+    }
+
+    .images__left {
+        position: absolute;
+        top: -201px;
+        left: 0;
+        bottom: 0;
+        width: 385px;
+        height: 202px;
+        background-image: url('../images/desktop_donate/section3/palm_foto640.png');
+        background-repeat: no-repeat;
+    }
+    .images__right {
+        position: absolute;
+        top: -130px;
+        right: 0;
+        width: 175px;
+        height: 131px;
+        background-image: url('../images/desktop_donate/section3/strelitzia640.png');
+    } 
+}
+
+@media(max-width: 639px){
+    .zoos__card {
+        gap: 20px 5px;
+    }
+    .zoos__item {
+        width: 85%;
+        height: auto;
+    }
+    .contents__item-text {
+        padding-bottom: 10px;
+    }
+    .button__zoos {
+        max-width: 220px;
+    }
+    .zoos__arrow-next {
+        display: none;
+    }
+    .zoos__arrow-prev {
+        display: none;
+    }
+}
+
+@media(max-width: 476px) {
+    .images__left {
+        background-image: url('../images/desktop_donate/section3/palm_foto320.png');
+        position: absolute;
+        top: -72px;
+        width: 120px;
+    }
+    .images__right {
+        /* position: absolute; */
+        top: -62px;
+        right: 0;
+        background-repeat: no-repeat;
+        background-image: url('../images/desktop_donate/section3/strelitzia320.png');
+        width: 68px;
+    }
+}

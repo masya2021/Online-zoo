@@ -1,0 +1,13 @@
+.watch {
+    background-image: url('../images/donate/panda_bg.jpg');
+    background-size: cover;
+    /* background-size: auto; */
+    height: 385px;
+    /* width: 100%; */
+    /* padding-top: -10px; */
+    background-position: center;
+    background-repeat: no-repeat;
+    /* margin-top: 100px; */
+    width: 100%;
+}
+

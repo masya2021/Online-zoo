@@ -1,0 +1,33 @@
+.navigation__list {
+    display: flex;
+    gap: 58px;
+    font-weight: 500;
+    line-height: 140%;
+    color: #FFFFFF;   
+}
+.navigation__item:nth-child(4) {
+    color: #E47209;
+}
+.navigation__item:first-child {
+    color: #FFFFFF;
+}
+.navigation__link:hover {
+    color: #ca7322;
+    opacity: 0.9;
+    transition: color .36s linear;
+}
+.navigation__link:active {
+    color: #E47209;
+    transition: color .36s ease-in-out;
+}
+.item__contactus-link {
+    color: #FFFFFF;
+}
+
+.navigation_link:visited,
+.above:visited {
+  color: #767474;
+}
+.navigation__item {
+    padding-top: 0px;
+}

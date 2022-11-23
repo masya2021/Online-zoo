@@ -1,0 +1,120 @@
+.header {
+    background-color: #000000;
+    padding: 14px 0px ;
+    position: absolute;
+    top: 0;
+	left: 0;
+	right: 0;
+}
+.header__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+}
+.header__title {
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;
+    width: 82px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-image: url('../icons/logo/bamboo.svg');
+    background-repeat: no-repeat;
+    background-position: left 10px bottom 8px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: .36s ease-in-out;
+}
+.header__title:hover {
+    border: 1px solid #4B9200;
+    color: #4B9200;
+    background-image: url('../icons/logo/bambooHover.svg');
+}
+
+.header__logo-text {
+    font-weight: 400;
+    font-size: 19.0145px;
+    line-height: 120%;
+    text-align: center;
+}
+.header__navigation {
+    padding-left: 63px;
+}
+.header__designe {
+    padding-left: 439px;
+    cursor: pointer;
+    font-weight: 500;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+.header__designe:hover {
+    color: #ca7322;
+    transition: color .36s linear;
+}
+.header__designe:active {
+    color: #E47209;
+    transition: color .36s ease-in-out;
+}
+
+.active {
+    position: relative;
+}
+
+@media (max-width:1440px) {
+    .header__designe {
+        padding-left: 385px;
+    }
+}
+@media (max-width:1220px) {
+    .header__designe {
+        padding-left: 23%;
+    }
+}
+
+@media (max-width:1000px) {
+    .header {
+        position: relative;
+        z-index: 1000;
+    }
+    .header__designe {
+        padding-left: 27.45%;
+    }
+
+    .header__navigation {
+        padding-left: 64px;
+    }
+}
+
+@media (max-width:640px) {
+    .header {
+        padding: 3px 0px ;
+    }
+    .header__container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .header__title {
+        border: transparent;
+    }
+    .header__title {
+        width: 47px;
+        height: 29.5px;
+        background-image: url('../icons/logo/bamboo640.svg');
+        background-position: left 3px top 13px;
+    }
+    .header__logo-text {
+        font-size: 12.2899px;
+    }
+    .header__navigation {
+        display: none;
+    }
+    .designe {
+        display: none;
+    }
+    .burger {
+        display: block;
+    }
+}

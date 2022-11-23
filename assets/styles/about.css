@@ -1,0 +1,232 @@
+.about {
+    background-image: url(../images/desktop_donate/section2/flower_foto1.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    /* background-size: contain; */
+}
+.about__container {
+    padding: 140px 0px 90px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about__image {
+    margin-left: 28px;
+    width: 609px;
+    height: 403px;
+}
+.about__image1000 {
+    display: none;
+}
+.description {
+    padding-left: 87px;
+}
+.description__content {
+    width: 465px;
+}
+.description__title {
+    font-size: 48px;
+    line-height: 120%;
+    font-weight: 400;
+    /* letter-spacing: 2px; */
+    color: #333B41;
+    padding-bottom: 22px;
+}
+.description__text {
+    line-height: 130%;
+    padding-bottom: 54px;
+}
+.description__subtitle {
+    font-size: 24px;
+    line-height: 120%;
+    font-weight: 400;
+    color: #333B41;
+    padding-bottom: 34px;
+}
+.description__subtitle-text {
+    line-height: 140%;
+}
+
+@media(max-width: 1440px){
+    .about {
+        background-image: none;
+    }
+}
+@media(max-width: 1220px){
+    .about {
+        background-image: url(../images/desktop_donate/section2/flower_foto1.jpg);
+    }
+    .about__container {
+        padding: 70px 0px 30px 120px;
+    }
+    .description {
+        /* padding-left: 120px; */
+        padding-top: 30px;
+    }
+}
+
+@media(max-width: 1000px){
+    .about {
+        background-image: none;
+    }
+    .about__container {
+        padding: 99px 0px 57px;
+        /* flex-direction: row; */
+        padding-left: 31px;
+        gap: 31px;
+    }
+    .about__image {
+        width: 455px;
+        height: 408px;
+        /* max-height: 100%; */
+        display: none;
+    }
+    .about__image1000 {
+        display: block;
+        width: 455px;
+        height: 418px;
+        padding-top: 10px;
+    }
+    .description__content {
+        max-width: 454px;
+    }
+    .description {
+        padding-top: 0px;
+        padding-left: 0px;
+    }
+    .description__subtitle-text {
+        line-height: 138%;
+    }
+}
+@media(max-width: 640px){
+    .about {
+        background-image: url('../images/desktop_donate/section2/flower_foto640.png');
+        background-position: top -41px right;
+    }
+    .about__container {
+        padding: 24px 0px 57px;
+        padding-left: 23px;
+    }
+    .about__image {
+        width: 455px;
+        height: 408px;
+        display: none;
+    }
+    .about__image1000 {
+        display: none;
+    }
+    .description__content {
+        max-width: 495px;
+    }
+    .description {
+        width: 495px;
+        padding-top: 0px;
+        padding-left: 0px;
+    }
+    .description__text {
+        margin-left: -2px;
+        line-height: 135%;
+        padding-bottom: 30px;
+    }
+    .description__subtitle {
+        padding-bottom: 18px;
+    }
+    .description__subtitle-text {
+        line-height: 138%;
+        width: 495px;
+    }
+}
+
+@media(max-width: 626px){
+
+    .about {
+        /* background-image: url('../images/desktop_donate/section2/flower_foto450.png'); */
+        background-position: top 5vh right;
+        background-size: 15%;
+    }
+    .description__title {
+        font-size: 2.5em;
+    }
+    .description__text {
+        font-size: 1em;
+        padding-bottom: 20px;
+        max-width: 405px;
+    }
+    .description__subtitle {
+        font-size: 1.8em;
+    }
+    .description__subtitle-text {
+        font-size: 1em;
+        max-width: 445px;
+    }
+    /* 
+    .about__container {
+        padding: 24px 0px 57px;
+        padding-left: 23px;
+    }
+    .about__image {
+        width: 455px;
+        height: 408px;
+        display: none;
+    }
+    .about__image1000 {
+        display: none;
+    }
+    .description__content {
+        max-width: 495px;
+    }
+    .description {
+        width: 495px;
+        padding-top: 0px;
+        padding-left: 0px;
+    }
+    .description__text {
+        margin-left: -2px;
+        line-height: 135%;
+        padding-bottom: 30px;
+    }
+    .description__subtitle {
+        padding-bottom: 18px;
+    }
+    .description__subtitle-text {
+        line-height: 138%;
+        width: 495px;
+    } */
+
+
+}
+
+
+@media(max-width: 476px){
+
+    .about {
+        /* background-image: url('../images/desktop_donate/section2/flower_foto450.png'); */
+        background-position: top 5vh right;
+        background-size: 15%;
+    }
+    .description__title {
+        font-size: 1.5em;
+        width: 265px;
+    }
+    .description__text {
+        max-width: 265px;
+    }
+    .description__subtitle {
+        font-size: 1.8em;
+    }
+    .description__subtitle-text {
+        max-width: 265px;
+        line-height: 21.6px;
+    }
+
+    .description__content {
+        max-width: 265px;
+    }
+    .about__container {
+        /* width: 250px; */
+        padding-left: 10px;
+    }
+    .description {
+        width: 205px;
+    }
+}
